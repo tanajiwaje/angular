@@ -1,0 +1,14 @@
+
+
+<h1>welcome to</h1>
+
+Enter name <input type="text" [(ngModel)]="title">
+<h1>{{title}}</h1>
+
+Number1 <input type="text"  [(ngModel)]="no1">
+Number2 <input type="text"  [(ngModel)]="no2">
+<input type="button" value="add" (click)="Addition(no1,no2)">
+<h1>{{result}}</h1>
+
+<input type="checkbox" [(ngModel)]="ch">
+<input type="button" value="display" [disabled]="ch">

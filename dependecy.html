@@ -1,0 +1,18 @@
+<h1>hello</h1>
+
+<h1>{{addresult}}</h1>
+<h1>{{subresult}}</h1>
+<h1>{{multiresult}}</h1>
+<h1>{{divresult}}</h1>
+
+
+num1 <input type="text" [(ngModel)]="num1" />
+num2 <input type="text" [(ngModel)]="num2" />
+
+<br>
+<input type="button" value="add" (click)="add(num1,num2)">
+<input type="button" value="sub" (click)="sub(num1,num2)">
+<input type="button" value="multi" (click)="multi(num1,num2)">
+<input type="button" value="div" (click)="div(num1,num2)">
+<h1>{{result}}</h1>
+

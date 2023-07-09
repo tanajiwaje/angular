@@ -1,0 +1,30 @@
+
+
+
+<table>
+    <tr>
+        <td>id:<input type="text" [(ngModel)]="eid"></td>
+        </tr>
+        <tr>
+        <td>name:<input type="text" [(ngModel)]="ename"></td>
+    </tr>
+
+    <tr><input type="button" value="Add" (click)="Display(eid,ename)"></tr>
+</table>
+
+<table border="1">
+    <thead>
+        <tr> <th>id</th> 
+            <th>name</th>
+        </tr>
+        
+    </thead>
+    <tbody  *ngFor="let d of emp">
+        <tr>
+            <td>{{d.eid}}</td>
+            <td>{{d.ename}}</td>
+        </tr>
+       
+    </tbody>
+</table>
+
